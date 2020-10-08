@@ -1,0 +1,218 @@
+@font-face{
+    font-family: 'Amatic';
+    src : url('../font/AmaticSC-Regular.ttf');
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic';
+    background-color: black;
+    --couleurHot: rgb(248, 51, 51);
+    --couleurNews: rgb(212, 212, 212); 
+}
+nav{
+    position: fixed;
+    width:100%;
+    height:40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.navMenu{
+    margin: 0 auto;
+    width: 700px;
+    outline: 1px white solid;
+    outline-offset: -1px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.navMenu div{
+    
+    padding: 10px 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+.navMenu div:hover{
+    cursor: pointer;
+    background-color:  rgb(248, 51, 51);
+}
+nav:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+#menu, #about, #navbar, #contact, #map, .timeHeader{
+    width:1200px;
+    margin: 0 auto;
+}
+#navbar a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    padding: 5px 15px;
+}
+#navbar a:hover{
+    background-color: rgb(136, 136, 136);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image : url('../img/pizza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height:667px;
+}
+.timeHeader>span{
+    position: relative;
+    left:10px;
+    top:-50px;
+    margin-bottom: -50px;
+    color: white;
+    font-size: 1em;
+    padding: 5px 15px;
+    background-color: black;
+}
+.logoHeader{
+    text-align: center;
+    left:0px;
+    top:0px;
+}
+.logoHeader>span{
+    color: white;
+    font-size: 5em;
+}
+.logoHeader>p>a{
+    color: white;
+    font-size: 1.5em;
+    padding: 5px 15px;
+    background-color: black;
+    text-decoration: none;
+}
+.logoHeader>p>a:hover{
+    background-color: rgb(136, 136, 136);
+}
+#menu, #about, #map, #contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.theMenu{
+    display: flex;
+    justify-content: center;
+}
+#Pasta, #Starter{
+    display: none;
+}
+#Pizza, #Pasta, #Starter{
+    margin: 0 auto;
+    width: 700px;
+    background-color: white;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+/* selecteur tordu */
+.piz:hover~#Pizza{
+    display: block;
+}
+
+.sectionTitle{
+    text-align: center;
+    margin: 50px 0;
+    font-weight: 200;
+    color: white;
+    font-size:3em; 
+}
+.price{
+    font-weight: 200;
+    color: white;
+    padding: 5px;
+    margin-right: 10px;
+    float: right;
+    border-radius: 5px;
+    background-color:  rgb(136, 136, 136); 
+}
+.hot{
+    font-weight: 200;
+    color: white;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: var(--couleurHot);
+}
+.new{
+    font-weight: 200;
+    color: black;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color:  var(--couleurNews);
+}
+#about{
+    background-color:  rgb(175, 99, 99);
+    color: white;
+}
+.aboutContent{ 
+    width: 700px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+.chef{
+    float: right;
+    width: 200px;
+    border-radius: 300px / 200px;
+    margin-bottom: 30px;
+}
+.restaurant{
+    width: 700px
+}
+.open{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+}
+.open div{
+    width: 100%;
+}
+#map{
+    overflow: hidden;
+}
+#contact{
+    background-color:  rgb(136, 136, 136);
+}
+.formContact{
+    margin: 0 auto;
+    color: white;
+    width: 700px;
+}
+.fyi{
+    background-color: black;
+    padding: 2px 5px;
+}
+.formContact input{
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Amatic';
+    font-size: 1.3em; 
+}
+.contactBtn{
+    padding: 10px 0;
+    width: 703px;
+    font-family: 'Amatic';
+    font-size: 1.3em; 
+    border: 0;
+    background-color:  rgb(212, 212, 212);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 1.7em;
+    color: white;
+}
+footer a{
+    color:white;
+    text-decoration: none;
+}
